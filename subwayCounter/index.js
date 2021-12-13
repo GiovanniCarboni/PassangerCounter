@@ -31,10 +31,8 @@ function increment() {
 let savedGroups = [];
 
 function save() {
-	console.log(count);
-	savedGroups.shift()
+	savedGroups.shift();
 	savedGroups.unshift(count);
-	countGr.innerText = `Previous entries: ${savedGroups}`;
+	countGr.innerText = `${savedGroups} people entered last.`;
 }
 
-console.log(savedGroups);
