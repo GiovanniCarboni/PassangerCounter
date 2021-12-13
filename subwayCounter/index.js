@@ -19,6 +19,7 @@ console.log(myDogAge)
 */
 
 let countEl = document.getElementById("count-el");
+let countGr = document.getElementById("saved-groups");
 
 let count = 0;
 
@@ -27,3 +28,13 @@ function increment() {
 	countEl.innerText = count;
 };
 
+let savedGroups = [];
+
+function save() {
+	console.log(count);
+	savedGroups.shift()
+	savedGroups.unshift(count);
+	countGr.innerText = `Previous entries: ${savedGroups}`;
+}
+
+console.log(savedGroups);
