@@ -38,6 +38,11 @@ button {
 #save-btn {
     background: darkgreen;
 }
+
+#reset-btn {
+    background: gray;
+}
+
 #saved-groups {
     margin-top: 10px;
     font-size: 23px;

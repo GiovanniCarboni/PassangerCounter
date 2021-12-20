@@ -10,7 +10,7 @@ function increment() {
 	countEl.innerText = count;
 };
 
-let savedGroups = [];
+// let savedGroups = [];
 
 /*function save() {
 	savedGroups.shift();
@@ -20,6 +20,16 @@ let savedGroups = [];
 
 function save() {
 	// let previousEntries = " " + count + "; ";
-	let previousEntries = ` ${count}; `;
-	saveEl.innerText += previousEntries;
+	let previousEntries = `${count}; `;
+	saveEl.textContent += previousEntries;
+	count = 0;
+	countEl.textContent = 0;
 }
+
+function reset() {
+	count = 0;
+	countEl.textContent = 0;
+	saveEl.textContent = "Previous groups: ";
+}
+
+// innerText alternative mdn
